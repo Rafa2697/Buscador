@@ -3,6 +3,7 @@ import {useState} from 'react'
 import {FiSearch} from 'react-icons/fi';
 import './styles.css';
 import api from './services/api';
+
 function App() {
   const [input, setInput] = useState('') //input é o nome e setIput é para ser passado um valor novo para o estado
 
@@ -42,7 +43,7 @@ function App() {
               <span>{cep.logradouro}, {cep.complemento}</span>
               <span>{cep.bairro}</span>
               <span>{cep.localidade} - {cep.uf}</span>
-          </main>
+          </main> 
 
       )}
      
